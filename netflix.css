@@ -1,0 +1,22 @@
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.queslist input[type="radio"]:checked+label+.content{
+ max-height: 600px;
+ padding: 30px 20px;   
+}
+
+.queslist.content
+{
+    transition: all 0.5s;
+}
+
+.queslist input[type="radio"]:checked+label::after
+{
+    transform: rotate(135deg);
+}

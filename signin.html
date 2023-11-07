@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="header relative w-[100vw]  bg-center bg-cover pt-[10px] h-[1000px] pb-[10px] pl-2 pr-2" style="background-image: url(background.jpg); ">
+        <!--upper part-->
+        <nav class="flex items-center justify-between pt-[10px] pb-[10px]">
+
+            <img src="logo.png" class="logo w-[200px] ml-10 cursor-pointer">
+
+        </nav>
+
+        <div class="sign-in-form flex flex-col gap-9  h-[800px] w-[600px] " style="  background-color: rgba(0, 0, 0, 0.838); margin: 50px auto;">
+           
+            <h1 class="text-[45px]  text-white ml-[150px] " style="margin-top: 120px;" >Sign In</h1>
+           
+            <div class="flex flex-col w-[320px] gap-[23px] " style="margin: 0 auto;">
+                
+                <form class="email-signup flex flex-col gap-[10px] mt-[10px] overflow-hidden   ">
+                    <input type="email" placeholder="Email or phone number" class="  text-black font-bold p-[10px] w-[290px] flex-1 border-black border-2 outline-0 bg-gray-600 rounded-md " required>
+                    <h2 class="text-sm " style="color: rgb(242, 128, 22); ">Please enter a valid email address or phone number.</h2>
+                </form>
+
+                <form class="email-signup flex flex-col gap-3 mt-[10px] overflow-hidden   ">
+                    <input type="password" placeholder="Password" class="  text-black font-bold p-[10px] w-[290px] flex-1 border-black border-2 outline-0 bg-gray-600 rounded-md " required>
+                    <h2 class="text-sm " style="color: rgb(242, 128, 22); ">Your password must contain between 4 and 60 characters.</h2>
+                </form>
+              
+                <a  href="signin.html" class="border-0 outline-none  bg-[#db0001] text-[#fff] pt-[7px]  font-bold p-6 text-[15px] rounded-md  cursor-pointer hover:bg-red-700">Sign In</a>
+              
+                <div class=" flex flex-row justify-between" >
+                    <div class="remeberme flex flex-row">
+                        <input type="checkbox"  class="w-[20px]">
+                        <span class="text-white " style="color: gray;">Remeber Me</span>
+                    </div>
+                    <div class="need-help">
+                        <span class="text-white" style="color: gray;">Need Help?</span>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-[2px] ">
+                    <span class="text-xl" style="color: gray;">New To Netflix?</span>
+                    <span style="color: white;" class="cursor-pointer hover:underline text-xl">Sign Up Now</span>
+                </div>
+                <div class="flex flex-row ">
+                    <p class="" style="color:gray;">This page is protected by Google reCAPTCHA to ensure you're not a bot.<span class="hover:underline  " style="color: rgb(47, 47, 229);">Learn More.</span></p>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!--Lower Part-->
+    </div>
+    <div style="background-image: url(background.jpg); " >
+        <div class="footer  flex flex-col gap-12  w-[100%] items-center pb-10 " style="overflow-y: scroll; overflow-x: hidden; background-color:rgba(0, 0, 0, 0.838) ";>
+            <div class="questions  w-[100vw] h-fit flex flex-row mt-[50px] ml-[850px] " >
+                <h1 class="" style="color: gray;">Questions? Call<span class=" ml-[5px]  hover:underline">000-800-919-1694</span></h1>
+            </div>
+    
+            <div style="color: gray; " class=" gap-[200px] opt flex flex-row justify-between">
+                <a href="" class="hover:underline cursor-pointer"> FAQ</a>
+                <a href="" class="hover:underline cursor-pointer">Help Centre</a>
+                <a href="" class="hover:underline cursor-pointer">Terms of Use</a>
+                <a href="" class="hover:underline cursor-pointer">Privacy</a>
+            </div>
+    
+            <div style="color: gray;" class=" opt flex flex-row gap-[100px] mr-[470px]">
+                <a href="" class="hover:underline cursor-pointer">Cookie Preferences</a>
+                <a href="" class="hover:underline cursor-pointer" >Corporate Information</a>
+            </div>
+
+            <select name=""  style="color: ghostwhite;" class=" bg-transparent border-white border-2 pt-2 pb-2 w-32  mr-[745px] text-center rounded-md ">   
+                <option value="" class=" bg-transparent text-black font-bold font-serif">English</option>
+                <option value="" class="text-black font-bold font-serif">हिंदी </option>   
+           </select>
+        </div>
+
+
+    </div>
+</body>
+</html>
